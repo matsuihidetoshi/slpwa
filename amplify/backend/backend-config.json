@@ -1,0 +1,9 @@
+{
+	"auth": {
+		"slpwae19e0bbb": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	}
+}
