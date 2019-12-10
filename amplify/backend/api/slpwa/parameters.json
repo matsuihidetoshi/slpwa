@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "slpwa",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authslpwae19e0bbb",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

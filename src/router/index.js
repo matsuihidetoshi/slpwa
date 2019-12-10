@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '@/views/Home.vue'
+import PrivateNote from '@/components/PrivateNote.vue'
 import SignIn from '@/components/SignIn.vue'
 
 import store from '@/store/index.js'
@@ -46,8 +46,8 @@ AmplifyEventBus.$on('authState', async (state) => {
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: Home,
+    name: 'private_note',
+    component: PrivateNote,
     meta: { requireAuth: true }
   },
   {

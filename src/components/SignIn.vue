@@ -36,11 +36,11 @@ export default {
 }
 </script>
 <style>
-.login {
+.signin {
   margin: 20px;
 }
 @media screen and (max-width: 480px) {
-  .login div {
+  .signin div {
     min-width: 0;
   }
 }
