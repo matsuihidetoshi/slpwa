@@ -1,7 +1,7 @@
 <template>
   <div class="signin">
     <div v-if="!signedIn">
-      <amplify-authenticator></amplify-authenticator>
+      <amplify-authenticator v-bind:authConfig="authConfig"></amplify-authenticator>
     </div>
     <div v-if="signedIn">
       <amplify-sign-out></amplify-sign-out>
@@ -15,7 +15,29 @@ export default {
   name: 'SignIn',
   data () {
     return {
-      signedIn: false
+      signedIn: false,
+      authConfig: {
+        signUpConfig: {
+          hideAllDefaults: true,
+          defaultCountryCode: '1',
+          signUpFields: [
+            {
+              label: 'Username',
+              key: 'username',
+              required: true,
+              displayOrder: 1,
+              type: 'string',
+            },
+            {
+              label: 'Password',
+              key: 'password',
+              required: true,
+              displayOrder: 2,
+              type: 'password'
+            }
+          ]
+        }
+      }
     }
   },
   async beforeCreate() {
