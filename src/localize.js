@@ -9,7 +9,7 @@ let languageDict = {
     'Password': 'パスワード',
     'Enter your password': 'パスワードを入力してください',
     'Forget your password? ': 'パスワードを忘れた場合',
-    'Reset password': 'パスワードのリセット',
+    'Reset password': 'パスワードの再設定',
     'No account? ': '未登録ですか？ ',
     'Create account': '登録',
     'Have an account? ': '登録済ですか？ ',

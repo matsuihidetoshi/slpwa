@@ -9,7 +9,7 @@
       </div>
     </div>
     <div id="chat-form">
-      <textarea v-model="content" name="content" class="form" placeholder="Content"></textarea>
+      <textarea v-model="content" name="content" class="form" placeholder="Content"></textarea><br/>
       <button class="submit" v-on:click="createPrivateNote()">Post</button>
     </div>
   </div>
@@ -77,16 +77,17 @@ export default {
     font-size: 20px;
     border: solid 1px gray;
     border-radius: 5px;
-    height: 22px;
+    height: 80px;
+    width: 300px;
   }
   .submit {
+    width: 300px;
     font-size: 20px;
     border-radius: 5px;
-    margin-left: 5px;
     vertical-align: top;
   }
   .private-notes-area {
-    max-width: 500px;
+    width: 300px;
     height: 300px;
     display: inline-block;
     overflow: scroll;
